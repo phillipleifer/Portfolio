@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Analysis</title>
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/Layout_styles.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body class="homebg">
+    <div class="common header">
+        <h1 class="title"> Stock Analysis</h1>
+        <span class="subheader">
+            <a href="{{ url_for('home') }}">Home</a> |
+            <a href="{{ url_for('index') }}">Single Stock</a> |
+            <a href="{{ url_for('portfolio') }}">Portfolio</a> 
+        </span>
+    </div>
+
+    <div class="common leftmenu">Left Menu</div>
+
+    <div class="common mainbody">
+        <h1 class="center-text">Portfolio</h1>
+        <h3>Equal Weights</h3>
+        <div class="dropdown">
+                <div class="menu-icon" onclick="toggleDropdown()">&#9776;</div>
+                <div class="dropdown-content">
+                    <a href="{{ url_for('portfolio') }}">Equal weights</a>
+                    <a href="{{ url_for('custom_weights') }}">Custom Weights</a>
+                    <a href="{{ url_for('optimize') }}">Optimize Weights</a>
+                </div>
+            </div>             
+        <form method="post" action="{{ url_for('portfolio') }}">
+            <!-- New input field for the risk-free rate -->
+            <label for="riskFreeRate">Enter Risk-Free Rate:</label>
+            <input type="text" id="riskFreeRate" name="riskFreeRate" value="{{ request.form['riskFreeRate'] }}" required>
+            <br>
+            <label for="portfolioStockSymbol">Enter Stock Symbols:</label>
+            <button type="button" id="addStockSymbol">Add Stock Symbol</button>
+
+            <div id="stockSymbolContainer">
+                {% if request.form.getlist('portfolioStockSymbol') %}
+                    {% for stockSymbol in request.form.getlist('portfolioStockSymbol') %}
+                        <div class="stockSymbolInputContainer">
+                            <input type="text" class="stockSymbolInput" name="portfolioStockSymbol" value="{{ stockSymbol }}" required>
+                            <button type="button" class="removeStockSymbol" onclick="removeStockSymbol(this)">Remove</button>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="stockSymbolInputContainer">
+                        <input type="text" class="stockSymbolInput" name="portfolioStockSymbol" required>
+                        <button type="button" class="removeStockSymbol" onclick="removeStockSymbol(this)">Remove</button>
+                    </div>
+                {% endif %}
+            </div>
+
+
+
+            <label for="num_years">Select Number of Years for Historical Data:</label>
+            <select id="num_years" name="num_years" required>
+                {% for option_value, option_text in [('1', '1 year'), ('2', '2 years'), ('3', '3 years'), ('4', '4 years'), ('5', '5 years')] %}
+                    <option value="{{ option_value }}" {% if option_value == request.form['num_years'] %}selected{% endif %}>{{ option_text }}</option>
+                {% endfor %}
+            </select>
+            
+            <button type="submit" name="regularCalculation" id="calculateButton">Calculate</button>
+        </form>
+
+        <script>
+            // JavaScript code to add new input fields dynamically
+            document.getElementById('addStockSymbol').addEventListener('click', function () {
+                var container = document.getElementById('stockSymbolContainer');
+                var newInputContainer = document.createElement('div');
+                newInputContainer.className = 'stockSymbolInputContainer';
+                newInputContainer.innerHTML = '<input type="text" class="stockSymbolInput" name="portfolioStockSymbol" required>' +
+                                            '<button type="button" class="removeStockSymbol" onclick="removeStockSymbol(this)">Remove</button>';
+                container.appendChild(newInputContainer);
+            });
+
+            // JavaScript code to remove the input field
+            function removeStockSymbol(button) {
+                var container = document.getElementById('stockSymbolContainer');
+                var inputContainer = button.parentNode;
+                container.removeChild(inputContainer);
+            }
+        </script>
+
+        {% if portfolio_results_html %}
+            <h2>Analysis for Portfolio</h2>
+            {{ portfolio_results_html|safe }}
+        {% endif %}
+    </div>
+
+    <div class="common rightmenu">Right Menu</div>
+
+    <div class="common footer">
+        This is only to help you evaluate stock and is not liable for any losses | &copy; 2023 | by STOCK'N ROCK
+    </div>
+</body>
+</html>

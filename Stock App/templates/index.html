@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Analysis</title>
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/Layout_styles.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body class="homebg">
+    <div class="common header">
+        <h1 class="title"> Stock Analysis</h1>
+        <span class="subheader">
+            <a href="{{ url_for('home') }}">Home</a> |
+            <a href="{{ url_for('index') }}">Single Stock</a> |
+            <a href="{{ url_for('portfolio') }}">Portfolio</a>                
+        </span>
+    </div>
+
+    <div class="common leftmenu">Left Menu</div>
+
+    <div class="common mainbody">
+        <h1 class="move-right">Single Stock</h1>
+        <div class="upper-left-container">
+            <form action="/submit" method="post">
+                <label  class="left-align" for="stockSymbol">Enter Stock Symbol:</label>
+                <input type="text" id="stockSymbol" name="stockSymbol" value="{{ request.form['stockSymbol'] }}" required>
+                
+                <br><br>
+                <!-- New input field for the risk-free rate -->
+                <label  class="left-align" for="riskFreeRate">Risk-Free Rate:</label>
+                <input type="text" id="riskFreeRate" name="riskFreeRate" value="{{ request.form['riskFreeRate'] }}" required>                <br><br>
+                <label class="left-align" for="num_years">Select Number of Years for Historical Data:</label>
+                <select id="num_years" name="num_years" required>
+                    <option value="1" {% if request.form['num_years'] == '1' %} selected {% endif %}>1 year</option>
+                    <option value="2" {% if request.form['num_years'] == '2' %} selected {% endif %}>2 years</option>
+                    <option value="3" {% if request.form['num_years'] == '3' %} selected {% endif %}>3 years</option>
+                    <option value="4" {% if request.form['num_years'] == '4' %} selected {% endif %}>4 years</option>
+                    <option value="5" {% if request.form['num_years'] == '5' %} selected {% endif %}>5 years</option>
+                </select>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+
+            <br><br><br><br><br><br><br><br>
+            {% if stock_analysis_html %}
+                <h2>Analysis for {{ stock_symbol }}</h2>
+                {{ stock_analysis_html|safe }}
+            {% endif %}
+
+            {% if standard_deviation_html %}
+                <h2>Confidence Interval Analysis</h2>
+                {{ standard_deviation_html|safe }}
+            {% endif %}
+
+            <!-- Add this div to display the historical data plot -->
+            <div class="historical-plot">
+                {{ historical_plot_img|safe }}
+            </div>
+        </div>
+
+        <div class="upper-right-container">
+        <p>Current days Most Active stocks page from Yahoo Finance to give examples of different stocks to evaluate:</p>
+        <iframe src="https://finance.yahoo.com/most-active/" width="100%" height="400px" frameborder="0"></iframe>
+        </div>
+
+    </div>
+
+    <div class="common rightmenu">Right Menu</div>
+
+
+    <div class="common footer">
+        This is only to help you evaluate stock and is not liable for any losses | &copy; 2023 | by STOCK'N ROCK
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stock Analysis</title>
+        <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ url_for('static', filename='css/Layout_styles.css') }}" rel="stylesheet" type="text/css">
+    </head>
+    <body class="homebg">
+        {{ home_page_content | safe }}
+        <div class="common header">
+            <h1 class="title"> Stock Analysis</h1>
+            <span class="subheader">
+                <a href="{{ url_for('home') }}">Home</a> |
+                <a href="{{ url_for('index') }}">Single Stock</a> |
+                <a href="{{ url_for('portfolio') }}">Portfolio</a>               
+            </span>
+        </div>
+
+        <div class="common leftmenu">Left Menu</div>
+
+        <div class="common mainbody">
+            <a href="{{ url_for('getting_started') }}">Getting Started</a>
+            <h4 class="bold-center-text">Recognize And Understand Key Attributes For Stock Analysis And Performance Metrics</h4>
+            <br>
+            <p> Welcome to our comprehensive Stock Analysis and Performance Metrics page, designed to empower you with 
+            valuable insights into the world of financial markets. In today's dynamic and complex investment landscape,
+            understanding the key metrics that drive stock performance is crucial for informed decision-making. 
+            Whether you're a seasoned investor or just starting, this page serves as your go-to resource for 
+            deciphering the numbers that matter. This tool helps provide you with different calculations and definitions 
+            to help navigate the stock market with confidence. </p>
+            <p> Here are some key attributes that are calculated in this tool as well as how to use these pages: </p>
+            <ol>
+                <li class="descriptionstyle">
+                    Attributes
+                    <ul>
+                        <li>Arithmetic Average: is the average monthly return of a stock over a specific period. It is a measure of the typical, or average, monthly/annual performance of the stock throughout the last five years not compounded.</li>
+                        <li>Geometric Average: is a specialized measure emphasizing the compounded growth rate over a series of monthly/annual returns. This average reflects the compounded effect on the stock's value, providing a more accurate representation of its overall growth, because this calculation is taking the compounded growth throughout the five years. </li>
+                        <li>Standard Deviation: is a statistical measure that quantifies the amount of variation or dispersion in the monthly/annual returns of a stock over a specific period. It provides insights into the degree of volatility or risk associated with the stock's monthly/annual performance. A higher standard deviation indicates a greater degree of variability in returns, suggesting higher risk, while a lower standard deviation implies more stable and predictable monthly returns. </li>
+                        <li>Sharpe Ratio: is a risk-adjusted performance measure for stocks that evaluates the return of an investment relative to its risk. A higher Sharpe Ratio suggests a better risk-adjusted performance, indicating that the investment has delivered more return for each unit of risk taken. Sharpe ratio greater than 1.0 is considered acceptable to good by investors. A ratio higher than 2.0 is rated as very good. A ratio of 3.0 or higher is considered excellent.</li>
+                        <li>Beta: is a measure of a stock's sensitivity to market movements, specifically to changes in a benchmark index (e.g., S&P 500). Beta quantifies the stock's price volatility in relation to the market. A beta of 1 indicates that the stock tends to move in line with the market, while a beta greater than 1 suggests higher volatility, and a beta less than 1 indicates lower volatility compared to the market. A negative beta indicates an inverse relationship, meaning the stock tends to move opposite to the market. </li>
+                        <li>Confidence Interval: is a statistical range used to estimate where a certain parameter is likely to fall, in this case the expected return of a stock, expressed alongside a confidence level. The confidence level, indicates the probability that the true parameter lies within the computed range. By incorporating the standard deviation, which encapsulates the volatility in the stock's returns, the confidence interval provides investors with a probabilistic assessment of the potential outcomes for the Stock. </li>
+                    </ul>
+                </li>
+                <li class="descriptionstyle">
+                    Single Stock
+                    <ul>
+                        <li>On this page you can view the calculations of each different analysis. </li>
+                        <li>just simply typing in the STOCK SYMBOL, and your calculated Risk Free Rate and press submit.</li>
+                    </ul>
+                </li>
+                <li class="descriptionstyle">
+                    Portfolio
+                    <ul>
+                        <li>On this page you can view the calculations as if this were a portfolio of stocks.</li>
+                        <li>This page is also separated out into three sections 1) Equal Weights, 2) Custom Weights, and 3) Optimized Weights.</li>
+                        <li>On the Equal Weights section you just type your calculated Risk Free Rate, and either a single STOCK SYMBOL or press 'Add Stock Symbol'/'Remove' if you want to see that calculation of the portfolio and press 'Calculate'.</li>
+                        <li>On the Custom Weights section you just type your calculated Risk Free Rate, and either a single STOCK SYMBOL or press 'Add Stock Symbol'/'Remove' and your specific weight (Expressed as a percentage e.g. 0.01=10%) for each individual stock symbol then press 'Calculate' - the 'Calculate' button will not work if the weights are greater than 1. </li>
+                        <li>On the Optimize Weights section you just type your calculated Risk Free Rate, and either a single STOCK SYMBOL or press 'Add Stock Symbol'/'Remove' and then press Optimize. </li>
+                            <ul>
+                                <li>In this section each stock refers to the proportionate allocation of investment capital to individual stocks within a portfolio. Expressed as a percentage, each stock's weight represents its share of the total portfolio value. (Remember this takes into account all of the stocks within the portfolio and their risk/return and then maximizes the sharpe ratio. This could mean that some single stocks that have high Sharpe Ratio's are left out.)
+                            </ul>
+                    </ul>
+                </li>                
+            </ol>
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <div class="common rightmenu">Right Menu</div>
+
+        <div class="common footer">
+            This is only to help you evaluate stock and is not liable for any losses | &copy; 2023 | by STOCK'N ROCK
+        </div>
+    </body>
+</html>

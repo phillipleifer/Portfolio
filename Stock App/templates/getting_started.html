@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stock Analysis</title>
+        <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ url_for('static', filename='css/Layout_styles.css') }}" rel="stylesheet" type="text/css">
+    </head>
+    <body class="homebg">
+        {{ home_page_content | safe }}
+        <div class="common header">
+            <h1 class="title"> Stock Analysis</h1>
+            <span class="subheader">
+                <a href="{{ url_for('home') }}">Home</a> |
+                <a href="{{ url_for('index') }}">Single Stock</a> |
+                <a href="{{ url_for('portfolio') }}">Portfolio</a>               
+            </span>
+        </div>
+
+        <div class="common leftmenu">Left Menu</div>
+
+        <div class="common mainbody">
+            <a href="{{ url_for('home') }}">Home</a>  
+            <h4 class="bold-center-text">Here is some advice on getting started and some recomendations on creating a portfolio</h4>
+            <br>
+            <p> Remember this is page is just recomendations and will not tell you which stocks to buy. This is a tool to help evaluate stocks and is not liable for any losses. This is not advice from a CFP or CPA  </p>
+            <ol>
+                <li class="descriptionstyle">
+                    Getting Started
+                    <ul>
+                        <li>First read and understand the definitions on the home page</li>
+                        <li>Know different companies that you want to evaluate</li>
+                            <ul>
+                                <li>On the single stock page, there is a section that shows the most active stocks for the day provided by yahoo finace. </li>
+                                <li>You can also search different mutual funds on google and look at stocks they have.</li>
+                            </ul>                        
+                        <li>Calculate the Risk Free Rate (many people just go off of the 10 Year Treasury Rate - <a href="https://ycharts.com/indicators/10_year_treasury_rate" target="_blank">10 Year Treasury Rate</a>) </li>
+                        <li>Find a decent stock whose calculations and graph look good (see home page for calculation definitions.)</li>
+                        <li>When you find a decent stock compare it with its competitors, on portfolio equal weights page (see if 1 or multiple of them are better or the same)</li>
+                        <li>Lastly try to increase your sharpe ratio, on the optimise page, as high as you can. Remember above 1 is good, 2 is great, 3 is exelent.</li>
+                    </ul>
+                </li>
+                <li class="descriptionstyle">
+                    Recomendations
+                    <ul>
+                        <li>When building a portfolio too little stocks is risky and has a higher chance of loosing money, while too much stocks can be too conservative which can reduce your possibility of gain.</li>
+                            <ul>
+                                <li>Targeting between 25 to 35 different stocks is a good amount. This allows for diversification which lowers the risk but is not too diversified that it will decrease your gain. The weights or shares you put towards each indivudal stocks should be based on the calculation as well as how much you are willing to put in your portfolio </li>
+                            </ul>
+                        <li>Its up to you how many years of historical data you compare it to, but usually the higher (e.g. 5 years) takes into account more of trends in the market.</li>
+                        <li>Buy stocks that have the sharpe ratio above 1 as well as making sure your portfolio sharpe ratio stays as high as possible.</li>
+                            <ul>
+                                <li>Remember the Sharpe ratio's definition is the highest possible return for the lowest amount of risk, so stocks with high sharpe ratios are highly recomended. </li>
+                            </ul>
+                        <li>While you want to be diversified, it is ok to give your portfolio a direction.</li>
+                            <ul>
+                                <li>If you want to focus on the tech sector/health care, or if you want to go even more specific such as cybersecurity or semiconductors that is allright.  You can have a lot of your stocks in those fields, but just add a few in a different sector to help diversify your portfolio. </li>
+                            </ul>                        
+                        <li>On the standard deviation table make sure that 68% left is also positive.  </li>
+                            <ul>
+                                <li>If you want a higher change at gaining money and not lossing, then you want to make sure that you are atleast 68 percent positive that no matter what the stock will increase having a positive 95 and 97 left are good, but could also decrease your gain. </li>
+                            </ul>                        
+                        <li>Once you find a stock to buy, look up the company in google and make sure that it is one your are interested in and believe in. </li>
+                            <ul>
+                                <li>You can look up its last years revenues, research and development projects, etc. </li>
+                                <li>If you find a stock you believe in it will help you want to pay attention to it and believe in your portfolio. </li>
+                            </ul>
+                        <li>If you can, hold the stock for at least 1 year so you get the long term capital gain tax - which is anywhere from 0-20%, compared to the short term capital gains - which is anyhwere from 0-37%. </li>
+                            <ul>
+                                <li>Remember this is supposed to be for a long term, this isn't day trading. Keep an eye on your stocks and re-evaluate them every couple of months or every year. </li>
+                            </ul>
+                        <li>Last but not least, DO NOT put more than you want to loose.</li>
+                             <ul>
+                                <li>This is the stock market, it can go up and down.</li>
+                                <li>If you need the money within the next couple of weeks/months DON'T put it in.</li>
+                            </ul>
+                    </ul>
+                </li>                
+            </ol>
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <div class="common rightmenu">Right Menu</div>
+
+        <div class="common footer">
+            This is only to help you evaluate stock and is not liable for any losses | &copy; 2023 | by STOCK'N ROCK
+        </div>
+    </body>
+</html>
