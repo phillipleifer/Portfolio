@@ -10,6 +10,7 @@ Driven by a passion for aiding others and enhancing organizational efficiency, I
 **Programming**: Python (Pandas, Numpy, Scikit-Learn, Matplotlib, Seaborn), R (dplyr, ggplot2, data.table)
 
 **Databases**: MySQL
+
 **Visualization Tools**: Tableau, Microsoft Power BI, Excel
 
 **Other Tools**: Smartsheet, NetSuite, Salesforce
