@@ -14,7 +14,7 @@ This portfolio showcases a collection of projects that highlight my expertise in
 ## Projects
 Here's a brief overview of the projects included in this portfolio:
 
-Stock App: Leveraging Python (Django, Flask), HTML, and CSS, I developed a website to predict and analyze stock performance, demonstrating my skills in data science and web development.
+Stock App: Leveraging Python (Django, Flask), HTML, and CSS, I developed a website to predict and analyze stock performance, demonstrating my skills in data science.
 
 Obesity Data Modeling: Using Python (Pandas, NumPy, Scikit-Learn) and statistical analysis techniques, I conducted data modeling to address challenges in obesity research, showcasing my proficiency in data mining, engineering, and modeling.
 
