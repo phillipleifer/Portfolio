@@ -6,7 +6,11 @@ With a master's degree in business analytics, I possess a robust background in d
 
 Driven by a passion for aiding others and enhancing organizational efficiency, I am committed to continual personal and professional growth. Seeking an analytical role where I can utilize my expertise in Python, R, Tableau, and other tools to contribute to an organization's success, I am dedicated to achieving and surpassing goals to facilitate both personal development and business advancement.
 
-**Skills**: Python (Pandas, Numpy, Scikit-Learn, Matplotlib, Seaborn), R (dplyr, ggplot2, data.table), MySQL, Tableau, Microsoft Power BI, Excel, Smartsheet, NetSuite, and Salesforce.
+## Skills
+**Programming**: Python (Pandas, Numpy, Scikit-Learn, Matplotlib, Seaborn), R (dplyr, ggplot2, data.table)
+**Databases**: MySQL
+**Visualization Tools**: Tableau, Microsoft Power BI, Excel
+**Other Tools**: Smartsheet, NetSuite, Salesforce
 
 ## Portfolio Overview
 This portfolio showcases a collection of projects that highlight my expertise in data analytics, visualization, and modeling. Each project demonstrates my ability to clean, analyze, and visualize data to uncover meaningful insights and drive informed decision-making.
@@ -88,12 +92,4 @@ I have submitted two files showcasing my proficiency in Tableau. These documents
 Feel free to explore each project folder to delve deeper into the details. I'm always open to feedback, collaboration opportunities, and discussions about data analytics and its applications.
 
 Thank you for visiting my portfolio!
-
-
-
-
-
-
-
-
 
