@@ -13,7 +13,8 @@ This portfolio showcases a collection of projects that highlight my expertise in
 
 Here's a brief overview of the projects included in this portfolio:
 
-**Stock App**: Leveraging Python (Django, Flask), HTML, and CSS, I developed a website to predict and analyze stock performance, demonstrating my skills in data science.
+### Stock App:
+Leveraging Python (Django, Flask), HTML, and CSS, I developed a website to predict and analyze stock performance, demonstrating my skills in data science.
 
 **Data Retrieval and Analysis**:
 This project harnesses the Yahoo Finance API (yfinance) to retrieve historical stock data for a specified symbol over a defined time frame. Leveraging this data, the script computes vital financial metrics crucial for evaluating stock performance:
@@ -41,11 +42,14 @@ This stock app goes beyond single stock analysis by integrating portfolio metric
 In summary, this project showcases proficiency in financial data analysis, leveraging Python libraries to extract, analyze, and visualize historical stock data. By presenting key performance metrics and confidence intervals clearly and visually, this project demonstrates the ability to derive meaningful insights essential for informed investment decision-making.
 
 
-Obesity Data Modeling: Using Python (Pandas, NumPy, Scikit-Learn) and statistical analysis techniques, I conducted data modeling to address challenges in obesity research, showcasing my proficiency in data mining, engineering, and modeling.
+### Obesity Data Modeling: 
+Using Python (Pandas, NumPy, Scikit-Learn) and statistical analysis techniques, I conducted data modeling to address challenges in obesity research, showcasing my proficiency in data mining, engineering, and modeling.
 
-SQL Project: I implemented SQL queries to analyze and extract insights from large datasets, demonstrating my expertise in database management and querying.
+### SQL Project: 
+I implemented SQL queries to analyze and extract insights from large datasets, demonstrating my expertise in database management and querying.
 
-Tableau Visualization: Leveraging Tableau and Microsoft Power BI, I created interactive visualizations to communicate insights and trends effectively, highlighting my skills in data visualization and storytelling.
+### Tableau Visualization: 
+Leveraging Tableau and Microsoft Power BI, I created interactive visualizations to communicate insights and trends effectively, highlighting my skills in data visualization and storytelling.
 
 Feel free to explore each project folder to delve deeper into the details. I'm always open to feedback, collaboration opportunities, and discussions about data analytics and its applications.
 
