@@ -6,25 +6,39 @@ With a master's degree in business analytics, I possess a robust background in d
 
 Driven by a passion for aiding others and enhancing organizational efficiency, I am committed to continual personal and professional growth. Seeking an analytical role where I can utilize my expertise in Python, R, Tableau, and other tools to contribute to an organization's success, I am dedicated to achieving and surpassing goals to facilitate both personal development and business advancement.
 
-Skills: Python (Pandas, Numpy, Scikit-Learn, Matplotlib, Seaborn), R (dplyr, ggplot2, data.table), MySQL, Tableau, Microsoft Power BI, Excel, Smartsheet, NetSuite, and Salesforce.
+**Skills**: Python (Pandas, Numpy, Scikit-Learn, Matplotlib, Seaborn), R (dplyr, ggplot2, data.table), MySQL, Tableau, Microsoft Power BI, Excel, Smartsheet, NetSuite, and Salesforce.
 
 ## Portfolio Overview
 This portfolio showcases a collection of projects that highlight my expertise in data analytics, visualization, and modeling. Each project demonstrates my ability to clean, analyze, and visualize data to uncover meaningful insights and drive informed decision-making.
 
-## Projects
 Here's a brief overview of the projects included in this portfolio:
 
-Stock App: Leveraging Python (Django, Flask), HTML, and CSS, I developed a website to predict and analyze stock performance, demonstrating my skills in data science.
+**Stock App**: Leveraging Python (Django, Flask), HTML, and CSS, I developed a website to predict and analyze stock performance, demonstrating my skills in data science.
 
-Signle Stock calculation
+**Data Retrieval and Analysis**:
+This project harnesses the Yahoo Finance API (yfinance) to retrieve historical stock data for a specified symbol over a defined time frame. Leveraging this data, the script computes vital financial metrics crucial for evaluating stock performance:
+
+**Arithmetic and Geometric Averages of Returns**: Offering insights into the average return achieved over the specified time frame, considering various calculation methodologies.
+**Standard Deviations**: Quantifying the volatility or risk associated with the stock's returns.
+Sharpe Ratio: Serving as a measure of the risk-adjusted return, providing a gauge of the return generated per unit of risk taken.
+Beta: Representing the stock's sensitivity to market movements, indicating the extent to which the stock's returns tend to move relative to the overall market.
+
+**Construction of Analysis DataFrame**:
+After computing these metrics, the script organizes them into a structured DataFrame. This DataFrame serves as a concise summary of the single stock's performance, facilitating easier interpretation. Additionally, the script calculates the expected return and confidence intervals based on the standard deviation. These intervals (68%, 95%, and 97%) offer valuable insights into the range within which the actual returns are likely to fall, considering the stock's historical volatility.
+
+**Visualization**:
+To augment the presentation of the analysis, the script generates HTML tables displaying both the stock analysis metrics and standard deviation intervals. This HTML format allows for seamless integration into various platforms, such as websites or reports. Furthermore, the script employs the plot_historical_data() function to create a visual representation of the stock's historical performance. This plot compares the stock's adjusted closing prices with those of the market index (S&P 500), offering a graphical perspective on the stock's performance relative to the broader market.
+
 <img width="1121" alt="image" src="https://github.com/phillipleifer/Portfolio/assets/89884799/be1e291d-21c9-416e-b6a8-b0d4f95d2659">
 
-This is of the graph
 <img width="1114" alt="image" src="https://github.com/phillipleifer/Portfolio/assets/89884799/293165c0-1391-4777-b35c-570a76732fab">
 
-This is of portfolio optimisation
+ **Optimization**:
+This stock app goes beyond single stock analysis by integrating portfolio metrics. Users have the flexibility to delve into calculations for equal-weighted stocks, custom-weighted stocks, and optimized weights, with the Sharpe ratio serving as the optimized metric. This functionality enables users to thoroughly analyze and customize their portfolios to suit their investment preferences effectively.
+
 <img width="1121" alt="image" src="https://github.com/phillipleifer/Portfolio/assets/89884799/d4fd4d14-3814-4b6d-8cb9-43b24fd92c96">
 
+In summary, this project showcases proficiency in financial data analysis, leveraging Python libraries to extract, analyze, and visualize historical stock data. By presenting key performance metrics and confidence intervals clearly and visually, this project demonstrates the ability to derive meaningful insights essential for informed investment decision-making.
 
 
 Obesity Data Modeling: Using Python (Pandas, NumPy, Scikit-Learn) and statistical analysis techniques, I conducted data modeling to address challenges in obesity research, showcasing my proficiency in data mining, engineering, and modeling.
