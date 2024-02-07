@@ -68,11 +68,11 @@ In summary, this portfolio entry showcases proficiency in machine learning techn
 ### SQL Project: 
 I implemented SQL queries to analyze and extract insights from large datasets, demonstrating my expertise in database management and querying.
 
-File 1: Managing Charity Auction Data
+**File 1**: Managing Charity Auction Data
 
 This SQL file demonstrates proficiency in handling and analyzing charity auction data spanning four years. Initially, the file splits the data into separate tables for each year, ensuring organization and ease of analysis. It then identifies new and returning bidders, a critical task in understanding attendee dynamics. Through various SQL operations such as joins, subqueries, and conditional statements, the file creates both wide and long-format datasets, catering to different analytical needs. These operations showcase versatility and adeptness in manipulating data structures. Furthermore, the file highlights the importance of data completeness by addressing missing values and ensuring uniformity across datasets. Overall, it reflects strong SQL skills in data management and analysis, essential for extracting meaningful insights from complex datasets.
 
-File 2: Integrating U.S. County Data
+**File 2**: Integrating U.S. County Data
 
 This SQL file illustrates the integration of diverse datasets related to U.S. counties, including poverty and unemployment rates, Medicaid expansion information, and county adjacency data. It begins by combining poverty and unemployment rates for each county, emphasizing data quality and consistency through inner joins. The file then appends Medicaid expansion information, providing valuable context for socioeconomic analysis. Through advanced SQL techniques like cross joins and left joins, it constructs comprehensive datasets that facilitate in-depth analysis of county-level economic indicators. Moreover, the file showcases problem-solving skills in addressing data gaps and handling complex relationships between datasets. Overall, it showcases proficiency in SQL data integration and analysis, essential for informed decision-making in socioeconomic research and policy planning.
 
