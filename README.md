@@ -16,6 +16,17 @@ Here's a brief overview of the projects included in this portfolio:
 
 Stock App: Leveraging Python (Django, Flask), HTML, and CSS, I developed a website to predict and analyze stock performance, demonstrating my skills in data science.
 
+Signle Stock calculation
+<img width="1121" alt="image" src="https://github.com/phillipleifer/Portfolio/assets/89884799/be1e291d-21c9-416e-b6a8-b0d4f95d2659">
+
+This is of the graph
+<img width="1114" alt="image" src="https://github.com/phillipleifer/Portfolio/assets/89884799/293165c0-1391-4777-b35c-570a76732fab">
+
+This is of portfolio optimisation
+<img width="1121" alt="image" src="https://github.com/phillipleifer/Portfolio/assets/89884799/d4fd4d14-3814-4b6d-8cb9-43b24fd92c96">
+
+
+
 Obesity Data Modeling: Using Python (Pandas, NumPy, Scikit-Learn) and statistical analysis techniques, I conducted data modeling to address challenges in obesity research, showcasing my proficiency in data mining, engineering, and modeling.
 
 SQL Project: I implemented SQL queries to analyze and extract insights from large datasets, demonstrating my expertise in database management and querying.
