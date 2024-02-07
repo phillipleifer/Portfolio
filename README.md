@@ -11,9 +11,9 @@ Driven by a passion for aiding others and enhancing organizational efficiency, I
 
 **Databases**: MySQL
 
-**Visualization Tools**: Tableau, Microsoft Power BI, Excel
+**Visualization Tools**: Tableau, Microsoft Power BI
 
-**Other Tools**: Smartsheet, NetSuite, Salesforce
+**Other Tools**: Excel, Smartsheet, NetSuite, Salesforce
 
 ## Portfolio Overview
 This portfolio showcases a collection of projects that highlight my expertise in data analytics, visualization, and modeling. Each project demonstrates my ability to clean, analyze, and visualize data to uncover meaningful insights and drive informed decision-making.
