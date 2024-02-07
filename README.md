@@ -45,6 +45,26 @@ In summary, this project showcases proficiency in financial data analysis, lever
 ### Obesity Data Modeling: 
 Using Python (Pandas, NumPy, Scikit-Learn) and statistical analysis techniques, I conducted data modeling to address challenges in obesity research, showcasing my proficiency in data mining, engineering, and modeling.
 
+**Project Objective**:
+In this project, I aimed to predict the level of obesity based on various health-related attributes. Here's a breakdown of my approach:
+
+**Data Exploration and Cleaning**: I began by loading the dataset using Pandas and dropping unnecessary columns like 'id'. Next, I transformed the target variable 'NObeyesdad' into numerical categories for ease of modeling.
+
+**Feature Engineering**: Recognizing the importance of feature engineering in predictive modeling, I converted categorical ordinal variables like 'CAEC' and 'CALC' into numerical representations. Additionally, I engineered a new feature, Body Mass Index (BMI), which is a commonly used indicator of healthy weight. This involved converting weight to pounds, height to feet, and then calculating the BMI.
+
+**Model Selection and Training**:
+
+**Decision Tree**: I trained a Decision Tree classifier with entropy criterion, achieving an accuracy of 85.37%.
+**Naive Bayes**: Next, I employed a Bernoulli Naive Bayes classifier, yielding an accuracy of 49.05%.
+**Random Forest**: Given its high accuracy of 90.30%, I utilized a Random Forest classifier with 100 estimators for robust prediction.
+**Gradient Boosting**: Using Gradient Boosting with 100 estimators, I attained a competitive accuracy of 90.09%.
+**Logistic Regression**: Despite its relatively low accuracy of 20.30%, I also implemented Logistic Regression for comparison.
+
+**Testing Dataset Prediction**: Leveraging the Random Forest model due to its superior accuracy, I applied it to predict the level of obesity in a testing dataset. After preprocessing the test data, I made predictions and transformed the results back into meaningful categories. Finally, I combined the predictions with their respective IDs for submission.
+
+In summary, this portfolio entry showcases proficiency in machine learning techniques and data preprocessing, emphasizing the importance of informed decisions in model selection and feature engineering. These skills are essential for achieving accurate predictions in real-world scenarios, highlighting the ability to tackle complex data challenges effectively.
+
+
 ### SQL Project: 
 I implemented SQL queries to analyze and extract insights from large datasets, demonstrating my expertise in database management and querying.
 
