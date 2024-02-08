@@ -89,10 +89,12 @@ These tasks allowed me to learn and implement SQL coding effectively, showcasing
 ### Tableau Visualization: 
 Leveraging Tableau and Microsoft Power BI, I created interactive visualizations to communicate insights and trends effectively, highlighting my skills in data visualization and storytelling.
 
-I have submitted two files showcasing my proficiency in Tableau. These documents serve as a testament to my skills and capabilities within the platform. Should you be interested in reviewing them. They encapsulate my ability to manipulate data effectively, design insightful visualizations, and derive meaningful insights to aid decision-making processes.
+I have submitted two files showcasing my proficiency in Tableau. These documents serve as a testament to my skills and capabilities within the platform, which I can share with you if you desire. Should you be interested in reviewing them. They encapsulate my ability to manipulate data effectively, design insightful visualizations, and derive meaningful insights to aid decision-making processes.
 
 
 Feel free to explore each project folder to delve deeper into the details. I'm always open to feedback, collaboration opportunities, and discussions about data analytics and its applications.
+
+If you would like to contact me, feel free at philleifer@gmail.com or connect with me on LinkedIn https://www.linkedin.com/in/phillip-leifer.
 
 Thank you for visiting my portfolio!
 
